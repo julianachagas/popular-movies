@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Popular Movies</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <h1>Popular Movies <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M16.0332 1.01172C13.1996 1.01172 10.8162 3.00156 10.1953 5.65234C9.46414 4.66648 8.30217 4.01562 6.99023 4.01562C4.79294 4.01562 2.99023 5.81832 2.99023 8.01562C2.99023 9.20382 3.52748 10.265 4.35937 11H2C1.44774 11.0001 1.00006 11.4477 1 12V30C1.00006 30.5523 1.44774 30.9999 2 31H23C23.5523 30.9999 23.9999 30.5523 24 30V27.002H25.1875C25.6054 28.1583 26.7077 29 28 29H30C30.5523 28.9999 30.9999 28.5523 31 28V15C30.9999 14.4477 30.5523 14.0001 30 14H28C26.7056 14 25.6018 14.8445 25.1855 16.0039H24V12C23.9999 11.4477 23.5523 11.0001 23 11H20.498C21.4494 9.93883 22.0352 8.5424 22.0352 7.01172C22.0352 3.70985 19.3351 1.01172 16.0332 1.01172V1.01172ZM16.0332 3.01172C18.2542 3.01172 20.0352 4.79075 20.0352 7.01172C20.0352 9.18656 18.3243 10.9281 16.168 11H15.8984C13.7423 10.9279 12.0332 9.18645 12.0332 7.01172C12.0332 4.79075 13.8122 3.01172 16.0332 3.01172V3.01172ZM6.99023 6.01562C8.10665 6.01562 8.99023 6.89919 8.99023 8.01562C8.99023 9.13202 8.10665 10.0176 6.99023 10.0176C5.87382 10.0176 4.99023 9.13202 4.99023 8.01562C4.99023 6.89919 5.87382 6.01562 6.99023 6.01562ZM10.6445 9.62695C10.8895 10.1273 11.2 10.5891 11.5684 11H9.62109C10.0521 10.6193 10.4079 10.1581 10.6445 9.62695ZM3 13H22V29H3V13ZM28 16H29V27H28C27.4344 27 27.0123 26.5784 27.0039 26.0156V16.9844C27.0123 16.4216 27.4344 16 28 16ZM24 17.9961H25V25.002H24V17.9961Z"
+        fill="white" />
+      <path
+        d="M6.00147 14.9995C5.73619 14.9995 5.48177 15.1049 5.29419 15.2925C5.1066 15.4801 5.00122 15.7345 5.00122 15.9998C5.00122 16.265 5.1066 16.5195 5.29419 16.707C5.48177 16.8946 5.73619 17 6.00147 17H8.00196C8.26725 17 8.52167 16.8946 8.70925 16.707C8.89683 16.5195 9.00222 16.265 9.00222 15.9998C9.00222 15.7345 8.89683 15.4801 8.70925 15.2925C8.52167 15.1049 8.26725 14.9995 8.00196 14.9995H6.00147Z"
+        fill="white" />
+    </svg>
+  </h1>
+  <form class="search-form">
+    <label for="movie" class="form-label">Search for a movie</label>
+    <div class="form-control">
+      <input type="text" name="movie-name" id="movie-name" placeholder="Enter a movie title...">
+      <button type="submit"><img src="assets/icons/search-icon.svg" alt="Search for a movie"></button>
+    </div>
+  </form>
+  <div class="show-only-favorites">
+    <input type="checkbox" name="only-favorites" id="only-favorites">
+    <label for="only-favorites">Show only my favorite movies</label>
+  </div>
+  <div class="movies">
+    <!-- template to create a movie item-->
+    <!-- <div class="movie favorite">
+      <div class="movie__info">
+        <div class="movie__img">
+          <img src="https://via.placeholder.com/120" alt="" width="120" height="120">
+        </div>
+        <div class="movie__text">
+          <p class="movie__title">Doctor Strange in the Multiverse of Madness (2022)</p>
+          <div class="movie__details">
+            <div class="movie__rating">
+              <img src="assets/icons/star.svg" alt="">
+              <span>8,5</span>
+            </div>
+            <button id="mark-favorite">
+              <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="favorite-icon">
+                <path
+                  d="M19.4578 2.54219C18.9691 2.05327 18.3889 1.66542 17.7503 1.40081C17.1117 1.1362 16.4272 1 15.7359 1C15.0446 1 14.3601 1.1362 13.7215 1.40081C13.0829 1.66542 12.5026 2.05327 12.0139 2.54219L10.9997 3.55639L9.98554 2.54219C8.99842 1.55507 7.6596 1.00051 6.26361 1.00051C4.86761 1.00051 3.52879 1.55507 2.54168 2.54219C1.55456 3.52931 1 4.86812 1 6.26412C1 7.66012 1.55456 8.99894 2.54168 9.98605L3.55588 11.0003L10.9997 18.4441L18.4436 11.0003L19.4578 9.98605C19.9467 9.49737 20.3346 8.91714 20.5992 8.27851C20.8638 7.63989 21 6.95539 21 6.26412C21 5.57285 20.8638 4.88835 20.5992 4.24973C20.3346 3.6111 19.9467 3.03088 19.4578 2.54219V2.54219Z"
+                  stroke="#BA0707" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              Favorite
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="movie__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore beatae blanditiis
+        iusto
+        voluptate repellat nulla, in est recusandae harum adipisci doloremque molestias eligendi explicabo omnis
+        deserunt
+        nam dolorum esse expedita!
+      </div>
+    </div> -->
+  </div>
+  <footer>Made with &#9825; by <a href="https://github.com/julianachagas" target="_blank">Juliana Chagas</a></footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
