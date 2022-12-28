@@ -1,10 +1,12 @@
-# Popular Movies 🎥
+# Popular Movies 🎬
 
-This project displays a list of popular movies using the The Movie Database API. The user can search for movies and mark a movie as favorite. Created with HTML, CSS/SASS, and JavaScript.
+App that displays a list of popular movies using the The Movie Database API. The user can search for movies and mark a movie as a favorite. It was created with HTML, CSS/SASS, and JavaScript.
 
-### Status
+This project is part of the [7 Days Of Code](https://7daysofcode.io/) Challenge by Alura, a Brazilian learning platform.
 
-🚧 _in progress_ 🚧
+## 🔗 Link
+
+- [Live Demo](https://julianachagas.github.io/popular-movies)
 
 ## 🛠️ Technologies
 
@@ -12,6 +14,36 @@ This project displays a list of popular movies using the The Movie Database API.
 - CSS
 - SASS
 - JavaScript
+
+## 🌐 API
+
+- [TMDB - The Movie Database API](https://developers.themoviedb.org/3/getting-started/introduction): source of the data and images
+
+## 💡 Features
+
+- List of the current popular movies on TMDB. This list updates daily.
+- User is able to search for a movie
+- User is able to mark a movie as a favorite
+- Option to display only the movies marked as favorites by the user
+- The favorite movies are stored in local storage, so the user can leave the page and still have access to the favorite movies when they revisit the page
+
+## 💻 Demo
+
+- List of popular movies
+
+<img src="github/demo1.gif" alt=""/> <br/><br/>
+
+- Search for a movie
+
+<img src="github/demo2.gif" alt=""/> <br/><br/>
+
+- Mark a movie as a favorite/Show only favorite movies
+
+<img src="github/demo3.gif" alt=""/> <br/><br/>
+
+## 📚 Resources
+
+- [Layout on Figma](https://www.figma.com/file/T6KNbp4XRHNImNFczpHVts/Popular-Movies?node-id=0%3A1&t=44OVe48JPQtooW4t-0) by Giovanna Moeller (Alura)
 
 ## 👩🏻‍💻 Author
 
