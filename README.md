@@ -6,7 +6,7 @@ This project is part of the [7 Days Of Code](https://7daysofcode.io/) Challenge 
 
 ## 🔗 Link
 
-- [Live Demo](https://julianachagas.github.io/popular-movies)
+- [Deploy](https://julianachagas-popular-movies.netlify.app/)
 
 ## 🛠️ Technologies
 
